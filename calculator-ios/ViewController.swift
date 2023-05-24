@@ -15,10 +15,39 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    @IBAction func modButtonClicked(_ sender: UIButton) {
-        operand = "modulus:by:"
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        //if its numeric set as variables else set as operand
+        if (Double(sender.currentTitle!) != nil){ // if currentTitle is numeric
+            if !(Double(sender.currentTitle!)! == 0.0 && firstVariable.isEmpty){ // currentTitle is 0, then avoid typing unlimited 0's
+                if (operand.isEmpty){
+                    firstVariable.append(sender.currentTitle!)
+                    resultLabel.text = firstVariable
+                }else{
+                    secondVariable.append(sender.currentTitle!)
+                    resultLabel.text = secondVariable
+                }
+            }
+        }else{
+            switch (sender.currentTitle!){
+            case "AC":
+                allClearClicked()
+            case "+/-":
+                arithmeticSignClicked()
+            case ".":
+                dotClicked()
+            case "=":
+                equalsClicked()
+            default:
+                if !firstVariable.isEmpty{ // to prevent calc without firstVar
+                    operand = sender.currentTitle!
+                }
+            }
+        }
     }
-    @IBAction func arithmeticSignClicked(_ sender: UIButton) {
+    /*@IBAction func modButtonClicked(_ sender: UIButton) {
+        operand = "modulus:by:"
+    }*/
+    func arithmeticSignClicked() {
         if (operand.isEmpty){
             if(firstVariable.contains("-")){
                 firstVariable.removeFirst()
@@ -35,26 +64,16 @@ class ViewController: UIViewController {
             resultLabel.text = secondVariable
         }
     }
-    @IBAction func allClearClicked(_ sender: UIButton) {
+     func allClearClicked() {
         firstVariable = ""
         secondVariable = ""
         resultLabel.text = "0"
         operand = ""
     }
-    @IBAction func divideClicked(_ sender: UIButton) {
-        operand = "/"
-    }
-    @IBAction func multiplicationClicked(_ sender: UIButton) {
-        operand = "*"
-    }
-    @IBAction func minusClicked(_ sender: UIButton) {
-        operand = "-"
-    }
-    @IBAction func plusClicked(_ sender: UIButton) {
-        operand = "+"
-    }
-    @IBAction func equalsClicked(_ sender: UIButton) {
+    func equalsClicked() {
         if (!operand.isEmpty){
+            //NS Expression mult, divid operand fixes
+            operand = (operand == "x") ? "*" : ((operand == "÷") ? "/" : operand)
             let tmpResult = firstVariable + " " + operand + " " + (secondVariable != "" ? secondVariable : firstVariable)
             let exp = NSExpression(format: tmpResult)
             resultLabel.text = "\(exp.expressionValue(with: nil, context: nil) ?? "0")"
@@ -63,7 +82,7 @@ class ViewController: UIViewController {
             operand = ""
         }
     }
-    @IBAction func dotClicked(_ sender: UIButton) {
+    func dotClicked() {
         if (operand.isEmpty){
             if (!firstVariable.isEmpty){
                 if(!firstVariable.contains(".")){
@@ -80,104 +99,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    @IBAction func zeroClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            if (!firstVariable.isEmpty){
-                firstVariable.append("0")
-                resultLabel.text = firstVariable
-            }
-        }else{
-            if (!secondVariable.isEmpty){
-                secondVariable.append("0")
-                resultLabel.text = secondVariable
-            }
-        }
-    }
-    @IBAction func oneClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("1")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("1")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func twoClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("2")
-            resultLabel.text = firstVariable
-        }
-        else{
-            secondVariable.append("2")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func threeClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("3")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("3")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func fourClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("4")
-            resultLabel.text = firstVariable
-        }
-        else{
-            secondVariable.append("4")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func fiveClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("5")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("5")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func sixClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("6")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("6")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func sevenClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("7")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("7")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func eightClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("8")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("8")
-            resultLabel.text = secondVariable
-        }
-    }
-    @IBAction func nineClicked(_ sender: UIButton) {
-        if (operand.isEmpty){
-            firstVariable.append("9")
-            resultLabel.text = firstVariable
-        }else{
-            secondVariable.append("9")
-            resultLabel.text = secondVariable
-        }
-    }
-    
-
-
 }
-

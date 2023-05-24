@@ -49,7 +49,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="modButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TuN-Ja-pBE"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="StV-Wi-NmL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4q-wy-haV">
@@ -61,7 +61,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="arithmeticSignClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSz-fx-aHK"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqV-M3-LxW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPI-my-JEz">
@@ -73,7 +73,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="allClearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUK-rQ-Ek5"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03k-Wv-a0X"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uL-vX-Bf5">
@@ -85,7 +85,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="divideClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNm-Nf-jwK"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqV-CU-yIO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -102,7 +102,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="sevenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nio-Ja-ycP"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0i-q8-ist"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW2-h4-0rF">
@@ -114,7 +114,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="eightClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yY1-g3-3wp"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaT-AK-SAy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CY-gb-RN5">
@@ -126,7 +126,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="nineClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fs-pG-ceA"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sP2-tD-tGd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APK-1i-0PQ">
@@ -138,7 +138,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="multiplicationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETq-CC-k9w"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6m-5n-oRJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -155,7 +155,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="fourClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvI-zZ-uxj"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2F-o9-oJE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYa-gc-4hL">
@@ -167,7 +167,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="fiveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Upt-Ax-PST"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1d-M2-yLM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kv-AM-OrV">
@@ -179,7 +179,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="sixClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HH2-6J-S3g"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ad-zX-8Mr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg3-Qx-N1h">
@@ -191,7 +191,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="minusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBJ-PS-Dg7"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzN-x9-ufD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -208,7 +208,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="oneClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZX4-PO-Y1Y"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvX-Fv-AsN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bF-Ic-dIZ">
@@ -220,7 +220,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="twoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Ud-Zjg"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oM-aQ-cAT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFY-FS-9aW">
@@ -232,7 +232,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="threeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6A-Kl-ZiH"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGF-ub-csC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0e-wn-9vB">
@@ -244,7 +244,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="plusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpI-p4-dXw"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjY-om-PW5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -261,7 +261,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="zeroClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWg-zj-OgF"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpU-0Z-r8r"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wk3-WN-ltn">
@@ -276,6 +276,7 @@
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                         </buttonConfiguration>
                                                         <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD3-lH-GKf"/>
                                                             <action selector="dotClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89c-CQ-Lbm"/>
                                                         </connections>
                                                     </button>
@@ -288,7 +289,7 @@
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="equalsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLU-WA-goh"/>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l50-5S-fMo"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
